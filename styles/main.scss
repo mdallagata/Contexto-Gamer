@@ -1,6 +1,36 @@
 @import "variables";
 
+body {
+  font-family: monospace;
+  text-align: left;
+}
 nav {
-  background-color: $colornegro;
-  color: $colorblanco;
+  background-color: $color-negro;
+  color: $color-blanco;
+  display: flex;
+  justify-content: center;
+}
+header {
+  background-color: $color-amarillo;
+  color: $color-negro;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+main {
+  color: $color-blanco;
+  padding: 0px 180px 0px 180px;
+  display: flex;
+  justify-content: center;
+}
+div {
+  background-color: $color-negro;
+  width: 1200px;
+  height: 80px;
+  display: flex;
+  justify-content: left;
+}
+.image {
+  width: 1200px;
+  height: 700px;
 }
