@@ -12,6 +12,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100px;
 }
 
 header {
@@ -23,6 +24,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100px;
   margin-bottom: 80px;
 }
 
@@ -46,6 +48,7 @@ footer {
   color: white;
   background-color: grey;
   text-align: center;
+  height: 150px;
 }
 
 h1 {
@@ -68,23 +71,6 @@ p {
   font-size: 23px;
 }
 
-.div-negro {
-  background-color: black;
-  width: 1200px;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-}
-
-.image {
-  width: 1200px;
-  height: 700px;
-}
-
 article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +80,14 @@ article {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 950px;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #f3db01;
 }
 
 .div-amarillo {
@@ -107,5 +101,23 @@ article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.div-negro {
+  background-color: black;
+  color: white;
+  width: 1200px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.image {
+  width: 1200px;
+  height: 700px;
 }
 /*# sourceMappingURL=main.css.map */

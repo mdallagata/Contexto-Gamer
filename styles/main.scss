@@ -10,12 +10,14 @@ nav {
   color: $color-blanco;
   display: flex;
   justify-content: center;
+  height: 100px;
 }
 header {
   background-color: $color-amarillo;
   color: $color-negro;
   display: flex;
   justify-content: center;
+  height: 100px;
   margin-bottom: 80px;
 }
 main {
@@ -30,6 +32,7 @@ footer {
   color: $color-blanco;
   background-color: $color-gris;
   text-align: center;
+  height: 150px;
 }
 h1 {
   font-size: 40px;
@@ -46,8 +49,29 @@ h4 {
 p {
   font-size: 23px;
 }
+article {
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+}
+a:visited {
+  color: $color-negro;
+}
+a:hover {
+  color: $color-amarillo;
+}
+
+.div-amarillo {
+  margin-top: 80px;
+  background-color: $color-amarillo;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
 .div-negro {
   background-color: $color-negro;
+  color: $color-blanco;
   width: 1200px;
   height: 80px;
   display: flex;
@@ -56,17 +80,4 @@ p {
 .image {
   width: 1200px;
   height: 700px;
-}
-article {
-  display: flex;
-  flex-direction: column;
-  width: 950px;
-}
-.div-amarillo {
-  margin-top: 80px;
-  background-color: $color-amarillo;
-  width: 300px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
 }
