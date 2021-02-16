@@ -1,7 +1,8 @@
 @import "variables";
 
 body {
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: left;
 }
 nav {
@@ -18,12 +19,34 @@ header {
   margin-bottom: 80px;
 }
 main {
-  color: $color-blanco;
+  color: $color-negro;
   padding: 0px 180px 0px 180px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
-div {
+footer {
+  margin-top: 80px;
+  color: $color-blanco;
+  background-color: $color-gris;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 15px;
+}
+p {
+  font-size: 23px;
+}
+.div-negro {
   background-color: $color-negro;
   width: 1200px;
   height: 80px;
@@ -33,4 +56,17 @@ div {
 .image {
   width: 1200px;
   height: 700px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+}
+.div-amarillo {
+  margin-top: 80px;
+  background-color: $color-amarillo;
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
 }

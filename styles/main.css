@@ -1,5 +1,5 @@
 body {
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: left;
 }
 
@@ -15,7 +15,7 @@ nav {
 }
 
 header {
-  background-color: yellow;
+  background-color: #f3db01;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +27,7 @@ header {
 }
 
 main {
-  color: white;
+  color: black;
   padding: 0px 180px 0px 180px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,9 +35,40 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-div {
+footer {
+  margin-top: 80px;
+  color: white;
+  background-color: grey;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 23px;
+}
+
+.div-negro {
   background-color: black;
   width: 1200px;
   height: 80px;
@@ -52,5 +83,29 @@ div {
 .image {
   width: 1200px;
   height: 700px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 950px;
+}
+
+.div-amarillo {
+  margin-top: 80px;
+  background-color: #f3db01;
+  width: 300px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
