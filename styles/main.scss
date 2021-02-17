@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: left;
 }
+main {
+  color: $color-negro;
+  padding: 80px 180px 100px 80px;
+}
 nav {
   background-color: $color-negro;
   color: $color-blanco;
@@ -19,17 +23,11 @@ header {
   display: flex;
   justify-content: center;
   height: 100px;
-  margin-bottom: 80px;
 }
-main {
-  color: $color-negro;
-  padding: 0px 180px 0px 180px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+article {
+  padding: 80px 0px 80px 0px;
 }
 footer {
-  margin-top: 80px;
   color: $color-blanco;
   background-color: $color-gris;
   text-align: center;
@@ -57,12 +55,24 @@ a:hover {
   color: $color-amarillo;
   background-color: $color-negro;
 }
-article {
+
+/*.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex: 200px;
+}*/
+.grid {
+  display: grid;
+  grid-row-gap: 250px;
+  grid-column-gap: 330px;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px;
+}
+.article-big {
   display: flex;
   flex-direction: column;
   width: 950px;
 }
-
 .div-amarillo {
   margin-top: 80px;
   background-color: $color-amarillo;
@@ -82,7 +92,7 @@ article {
 .div-blanco {
   background-color: $color-blanco;
   color: $color-negro;
-  width: 1050px;
+  width: 300px;
   height: 80px;
   display: flex;
   justify-content: left;
@@ -95,5 +105,5 @@ article {
   width: 950px;
 }
 .image-small {
-  width: 400px;
+  width: 300px;
 }
