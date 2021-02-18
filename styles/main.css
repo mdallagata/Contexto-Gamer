@@ -10,22 +10,28 @@ body {
   background-color: #ededed;
   font-family: "Roboto", sans-serif;
   text-align: left;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main {
   color: #0f1618;
-  padding: 60px 180px 60px 180px;
+  padding: 70px 180px 80px 180px;
 }
 
 nav {
   background-color: #0f1618;
   color: #ffffff;
+  text-shadow: 2px 2px 3px #f3db01;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 70px;
 }
 
@@ -38,17 +44,28 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
   border-radius: 0 0 10px 10px;
+  -webkit-box-shadow: 5px 5px 15px 5px #f3db01;
+          box-shadow: 5px 5px 15px 5px #f3db01;
 }
 
 article {
   margin-bottom: 80px;
+  max-width: 950px;
 }
 
 footer {
   color: #ffffff;
+  /* doesnt work*/
   background-color: #666;
+  color: #0f1618;
+  text-decoration: none;
+  text-shadow: none;
+  /* doesnt work*/
   text-align: center;
   height: 160px;
 }
@@ -66,8 +83,7 @@ h3 {
 }
 
 h4 {
-  font-size: 15px;
-  padding: 0px 0px 25px 0px;
+  font-size: 19px;
 }
 
 p {
@@ -75,13 +91,26 @@ p {
   font-size: 23px;
 }
 
+a {
+  color: #0f1618;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px #f3db01;
+  /*box-shadow: inset 1px 1px 22px 10px $color-amarillo; /* fixear fondos amarillos */
+}
+
 a:visited {
   color: #0f1618;
 }
 
 a:hover {
-  color: #f3db01;
-  background-color: #0f1618;
+  text-shadow: 1px 1px 10px #ffffff;
+}
+
+.container {
+  border-style: solid;
+  border-color: #f3db01;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 100px;
 }
 
 .grid {
@@ -95,50 +124,75 @@ a:hover {
       grid-template-rows: 50px 50px 0px;
 }
 
-.article-big {
-  width: 950px;
-}
-
-.div-amarillo {
-  margin-top: 80px;
-  background-color: #f3db01;
-  width: 300px;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.index-big-headliner {
+  width: 1050px;
 }
 
 .div-negro {
   background-color: #0f1618;
+  color: #0f1618;
+  text-decoration: none;
+  text-shadow: none;
   color: #ffffff;
   width: 1050px;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  border-radius: 0 0 8px 8px;
+  -webkit-box-shadow: 0px -30px 0px 0px #f3db01;
+          box-shadow: 0px -30px 0px 0px #f3db01;
 }
 
 .div-blanco {
   background-color: #ffffff;
   color: #0f1618;
+  text-decoration: none;
+  text-shadow: none;
   width: 325px;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 0 8px 8px;
+  -webkit-box-shadow: 0px -30px 0px 0px #f3db01;
+          box-shadow: 0px -30px 0px 0px #f3db01;
+}
+
+.div-amarillo {
+  margin-top: 80px;
+  background-color: #f3db01;
+  width: 300px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .image-big {
   width: 1050px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
 .image-medium {
@@ -148,6 +202,10 @@ a:hover {
 
 .image-small {
   width: 325px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+}
+
+.image-icon {
+  width: 45px;
 }
 /*# sourceMappingURL=main.css.map */

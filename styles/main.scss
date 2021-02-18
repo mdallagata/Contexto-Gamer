@@ -2,6 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+@mixin aMixIn($color) {
+  color: $color-negro;
+  text-decoration: none;
+  text-shadow: $color;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,16 +17,19 @@ body {
   background-color: $color-blanco-gris;
   font-family: "Roboto", sans-serif;
   text-align: left;
+  transition: 0.3s;
 }
 main {
   color: $color-negro;
-  padding: 60px 180px 60px 180px;
+  padding: 70px 180px 80px 180px;
 }
 nav {
   background-color: $color-negro;
   color: $color-blanco;
+  text-shadow: 2px 2px 3px $color-amarillo;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 70px;
 }
 header {
@@ -28,15 +37,19 @@ header {
   color: $color-negro;
   display: flex;
   justify-content: center;
-  height: 70px;
+  align-items: center;
+  height: 50px;
   border-radius: 0 0 10px 10px;
+  box-shadow: 5px 5px 15px 5px $color-amarillo;
 }
 article {
   margin-bottom: 80px;
+  max-width: 950px;
 }
 footer {
-  color: $color-blanco;
+  color: $color-blanco; /* doesnt work*/
   background-color: $color-gris;
+  @include aMixIn(none); /* doesnt work*/
   text-align: center;
   height: 160px;
 }
@@ -50,21 +63,29 @@ h3 {
   font-size: 25px;
 }
 h4 {
-  font-size: 15px;
-  padding: 0px 0px 25px 0px;
+  font-size: 19px;
 }
 p {
   padding: 20px 0px 30px 0px;
   font-size: 23px;
 }
+a {
+  @include aMixIn($sombra-amarilla);
+  /*box-shadow: inset 1px 1px 22px 10px $color-amarillo; /* fixear fondos amarillos */
+}
 a:visited {
   color: $color-negro;
 }
 a:hover {
-  color: $color-amarillo;
-  background-color: $color-negro;
+  text-shadow: 1px 1px 10px $color-blanco;
 }
 
+.container {
+  border-style: solid;
+  border-color: $color-amarillo;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 100px;
+}
 .grid {
   display: grid;
   grid-row-gap: 250px;
@@ -72,37 +93,47 @@ a:hover {
   grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px 0px;
 }
-.article-big {
-  width: 950px;
+.index-big-headliner {
+  width: 1050px;
+}
+.div-negro {
+  background-color: $color-negro;
+  @include aMixIn(none);
+  color: $color-blanco;
+  width: 1050px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px -30px 0px 0px $color-amarillo;
+}
+.div-blanco {
+  background-color: $color-blanco;
+  @include aMixIn(none);
+  width: 325px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px -30px 0px 0px $color-amarillo;
 }
 .div-amarillo {
   margin-top: 80px;
   background-color: $color-amarillo;
   width: 300px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-}
-.div-negro {
-  background-color: $color-negro;
-  color: $color-blanco;
-  width: 1050px;
-  height: 80px;
-  display: flex;
-  justify-content: left;
-}
-.div-blanco {
-  background-color: $color-blanco;
-  color: $color-negro;
-  width: 325px;
-  height: 80px;
+  height: 40px;
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .image-big {
   width: 1050px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 .image-medium {
   width: 950px;
@@ -110,5 +141,8 @@ a:hover {
 }
 .image-small {
   width: 325px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+}
+.image-icon {
+  width: 45px;
 }
