@@ -19,7 +19,7 @@ main {
 
 nav {
   background-color: #0f1618;
-  color: white;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,8 +39,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 70px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-radius: 0 0 10px 10px;
 }
 
 article {
@@ -48,7 +47,7 @@ article {
 }
 
 footer {
-  color: white;
+  color: #ffffff;
   background-color: #666;
   text-align: center;
   height: 160px;
@@ -115,7 +114,7 @@ a:hover {
 
 .div-negro {
   background-color: #0f1618;
-  color: white;
+  color: #ffffff;
   width: 1050px;
   height: 80px;
   display: -webkit-box;
@@ -127,7 +126,7 @@ a:hover {
 }
 
 .div-blanco {
-  background-color: white;
+  background-color: #ffffff;
   color: #0f1618;
   width: 325px;
   height: 80px;
@@ -139,16 +138,16 @@ a:hover {
 
 .image-big {
   width: 1050px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .image-medium {
   width: 950px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .image-small {
   width: 325px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=main.css.map */

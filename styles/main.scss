@@ -29,8 +29,7 @@ header {
   display: flex;
   justify-content: center;
   height: 70px;
-  border-bottom-right-radius: 100px;
-  border-bottom-left-radius: 100px;
+  border-radius: 0 0 10px 10px;
 }
 article {
   margin-bottom: 80px;
@@ -103,13 +102,13 @@ a:hover {
 
 .image-big {
   width: 1050px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .image-medium {
   width: 950px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 .image-small {
   width: 325px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
