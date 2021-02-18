@@ -17,6 +17,11 @@ body {
 main {
   color: #0f1618;
   padding: 70px 180px 80px 180px;
+  /*
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  */
 }
 
 nav {
@@ -95,7 +100,6 @@ a {
   color: #0f1618;
   text-decoration: none;
   text-shadow: 2px 2px 3px #f3db01;
-  /*box-shadow: inset 1px 1px 22px 10px $color-amarillo; /* fixear fondos amarillos */
 }
 
 a:visited {
