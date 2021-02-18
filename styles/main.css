@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #ededed;
   font-family: "Roboto", sans-serif;
@@ -6,12 +13,12 @@ body {
 }
 
 main {
-  color: black;
+  color: #0f1618;
   padding: 60px 180px 60px 180px;
 }
 
 nav {
-  background-color: black;
+  background-color: #0f1618;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,19 +26,21 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
+  height: 70px;
 }
 
 header {
   background-color: #f3db01;
-  color: black;
+  color: #0f1618;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100px;
+  height: 70px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 }
 
 article {
@@ -40,9 +49,9 @@ article {
 
 footer {
   color: white;
-  background-color: grey;
+  background-color: #666;
   text-align: center;
-  height: 120px;
+  height: 160px;
 }
 
 h1 {
@@ -59,19 +68,21 @@ h3 {
 
 h4 {
   font-size: 15px;
+  padding: 0px 0px 25px 0px;
 }
 
 p {
+  padding: 20px 0px 30px 0px;
   font-size: 23px;
 }
 
 a:visited {
-  color: black;
+  color: #0f1618;
 }
 
 a:hover {
   color: #f3db01;
-  background-color: black;
+  background-color: #0f1618;
 }
 
 .grid {
@@ -103,7 +114,7 @@ a:hover {
 }
 
 .div-negro {
-  background-color: black;
+  background-color: #0f1618;
   color: white;
   width: 1050px;
   height: 80px;
@@ -117,7 +128,7 @@ a:hover {
 
 .div-blanco {
   background-color: white;
-  color: black;
+  color: #0f1618;
   width: 325px;
   height: 80px;
   display: -webkit-box;
@@ -128,13 +139,16 @@ a:hover {
 
 .image-big {
   width: 1050px;
+  border-radius: 10px;
 }
 
 .image-medium {
   width: 950px;
+  border-radius: 10px;
 }
 
 .image-small {
   width: 325px;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */
