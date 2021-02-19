@@ -13,23 +13,15 @@ body {
   text-align: left;
   transition: 1s;
 }
-main {
-  color: $color-negro;
-  padding: 70px 180px 80px 180px;
-  /*
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  */
-}
 nav {
   background-color: $color-negro;
   color: $color-blanco;
-  text-shadow: 2px 2px 3px $color-amarillo;
+  text-shadow: 2px 2px 10px $color-amarillo;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 70px;
+  padding: 0 0 0 150px;
 }
 header {
   background-color: $color-amarillo;
@@ -41,15 +33,22 @@ header {
   border-radius: 0 0 10px 10px;
   box-shadow: 5px 5px 15px 5px $color-amarillo;
 }
+main {
+  color: $color-negro;
+  padding: 90px 180px 125px 180px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 article {
   margin-bottom: 80px;
   max-width: 950px;
 }
 footer {
-  color: $color-blanco;
-  background-color: $color-gris;
+  color: $color-negro;
+  background-color: $color-blanco;
   text-align: center;
-  height: 160px;
+  height: 250px;
 }
 h1 {
   font-size: 40px;
@@ -68,11 +67,8 @@ p {
   font-size: 23px;
 }
 a {
-  color: blue;
+  color: $color-azul;
   text-decoration: none;
-  &:visited {
-    color: $color-negro;
-  }
   &:hover {
     text-shadow: 1px 1px 10px $color-blanco;
   }
@@ -93,14 +89,6 @@ a {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
-}
-
-.grid {
-  display: grid;
-  grid-row-gap: 250px;
-  grid-column-gap: 310px;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px 0px;
 }
 .div-negro {
   background-color: $color-negro;
@@ -148,5 +136,9 @@ a {
   border-radius: 8px 8px 0 0;
 }
 .image-icon {
-  width: 45px;
+  width: 40px;
+  margin-left: 25px;
+}
+#logo {
+  height: 50px;
 }

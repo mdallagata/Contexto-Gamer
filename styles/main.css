@@ -1,3 +1,4 @@
+/* cambiar a href*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -14,30 +15,20 @@ body {
   transition: 1s;
 }
 
-main {
-  color: #0f1618;
-  padding: 70px 180px 80px 180px;
-  /*
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  */
-}
-
 nav {
   background-color: #0f1618;
   color: #ffffff;
-  text-shadow: 2px 2px 3px #f3db01;
+  text-shadow: 2px 2px 10px #f3db01;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 70px;
+  padding: 0 0 0 150px;
 }
 
 header {
@@ -58,16 +49,31 @@ header {
           box-shadow: 5px 5px 15px 5px #f3db01;
 }
 
+main {
+  color: #0f1618;
+  padding: 90px 180px 125px 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 article {
   margin-bottom: 80px;
   max-width: 950px;
 }
 
 footer {
-  color: #ffffff;
-  background-color: #666;
+  color: #0f1618;
+  background-color: #ffffff;
   text-align: center;
-  height: 160px;
+  height: 250px;
 }
 
 h1 {
@@ -92,12 +98,8 @@ p {
 }
 
 a {
-  color: blue;
+  color: #2969d1;
   text-decoration: none;
-}
-
-a:visited {
-  color: #0f1618;
 }
 
 a:hover {
@@ -125,17 +127,6 @@ a:hover {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
-}
-
-.grid {
-  display: -ms-grid;
-  display: grid;
-  grid-row-gap: 250px;
-  grid-column-gap: 310px;
-  -ms-grid-columns: 50px 50px 50px;
-      grid-template-columns: 50px 50px 50px;
-  -ms-grid-rows: 50px 50px 0px;
-      grid-template-rows: 50px 50px 0px;
 }
 
 .div-negro {
@@ -210,6 +201,11 @@ a:hover {
 }
 
 .image-icon {
-  width: 45px;
+  width: 40px;
+  margin-left: 25px;
+}
+
+#logo {
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */
