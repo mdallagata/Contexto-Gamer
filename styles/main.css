@@ -65,12 +65,7 @@ article {
 
 footer {
   color: #ffffff;
-  /* doesnt work*/
   background-color: #666;
-  color: #0f1618;
-  text-decoration: none;
-  text-shadow: none;
-  /* doesnt work*/
   text-align: center;
   height: 160px;
 }
@@ -97,9 +92,8 @@ p {
 }
 
 a {
-  color: #0f1618;
+  color: blue;
   text-decoration: none;
-  text-shadow: 2px 2px 3px #f3db01;
 }
 
 a:visited {
@@ -110,11 +104,27 @@ a:hover {
   text-shadow: 1px 1px 10px #ffffff;
 }
 
-.container {
-  border-style: solid;
-  border-color: #f3db01;
-  border-radius: 8px 8px 0 0;
+.sombra-amarilla {
+  text-shadow: 2px 2px 3px #f3db01;
+}
+
+.div-big {
   margin-bottom: 100px;
+  width: 1060px;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 60vw;
+}
+
+.children {
+  max-width: 325px;
+  margin: 0 15px 15px 15px;
 }
 
 .grid {
@@ -128,15 +138,8 @@ a:hover {
       grid-template-rows: 50px 50px 0px;
 }
 
-.index-big-headliner {
-  width: 1050px;
-}
-
 .div-negro {
   background-color: #0f1618;
-  color: #0f1618;
-  text-decoration: none;
-  text-shadow: none;
   color: #ffffff;
   width: 1050px;
   height: 80px;
@@ -157,9 +160,6 @@ a:hover {
 
 .div-blanco {
   background-color: #ffffff;
-  color: #0f1618;
-  text-decoration: none;
-  text-shadow: none;
   width: 325px;
   height: 80px;
   display: -webkit-box;

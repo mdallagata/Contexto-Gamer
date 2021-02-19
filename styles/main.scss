@@ -2,12 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-@mixin aMixIn($color) {
-  color: $color-negro;
-  text-decoration: none;
-  text-shadow: $color;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -52,9 +46,8 @@ article {
   max-width: 950px;
 }
 footer {
-  color: $color-blanco; /* doesnt work*/
+  color: $color-blanco;
   background-color: $color-gris;
-  @include aMixIn(none); /* doesnt work*/
   text-align: center;
   height: 160px;
 }
@@ -75,21 +68,33 @@ p {
   font-size: 23px;
 }
 a {
-  @include aMixIn($sombra-amarilla);
-}
-a:visited {
-  color: $color-negro;
-}
-a:hover {
-  text-shadow: 1px 1px 10px $color-blanco;
+  color: blue;
+  text-decoration: none;
+  &:visited {
+    color: $color-negro;
+  }
+  &:hover {
+    text-shadow: 1px 1px 10px $color-blanco;
+  }
 }
 
-.container {
-  border-style: solid;
-  border-color: $color-amarillo;
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 100px;
+.sombra-amarilla {
+  text-shadow: 2px 2px 3px $color-amarillo;
 }
+.div-big {
+  margin-bottom: 100px;
+  width: 1060px;
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60vw;
+}
+.children {
+  max-width: 325px;
+  margin: 0 15px 15px 15px;
+}
+
 .grid {
   display: grid;
   grid-row-gap: 250px;
@@ -97,12 +102,8 @@ a:hover {
   grid-template-columns: 50px 50px 50px;
   grid-template-rows: 50px 50px 0px;
 }
-.index-big-headliner {
-  width: 1050px;
-}
 .div-negro {
   background-color: $color-negro;
-  @include aMixIn(none);
   color: $color-blanco;
   width: 1050px;
   height: 80px;
@@ -115,7 +116,6 @@ a:hover {
 }
 .div-blanco {
   background-color: $color-blanco;
-  @include aMixIn(none);
   width: 325px;
   height: 80px;
   display: flex;
