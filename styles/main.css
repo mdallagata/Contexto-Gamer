@@ -16,14 +16,9 @@ body {
 
 nav {
   background-color: #0f1618;
-  color: #ffffff;
+  color: #fff;
   text-shadow: 2px 2px 10px #007965;
-  border-style: groove;
-  border-width: 8px;
-  border-color: #007965;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-bottom: 8px groove #007965;
   height: 70px;
 }
 
@@ -86,7 +81,7 @@ article h1 {
 
 footer {
   color: #666;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: center;
   height: 150px;
 }
@@ -183,7 +178,7 @@ a:hover {
 
 .div-verde {
   background-color: #007965;
-  color: #ffffff;
+  color: #fff;
   width: 1050px;
   height: 80px;
   display: -webkit-box;
@@ -202,12 +197,12 @@ a:hover {
 }
 
 .div-verde:hover {
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 }
 
 .div-blanco {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 325px;
   height: 80px;
   display: -webkit-box;

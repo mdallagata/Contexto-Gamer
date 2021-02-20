@@ -17,12 +17,7 @@ nav {
   background-color: $color-negro;
   color: $color-blanco;
   text-shadow: 2px 2px 10px $color-verde;
-  border-style: groove;
-  border-width: 8px;
-  border-color: $color-verde;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-bottom: 8px groove $color-verde;
   height: 70px;
 
   img:hover {
