@@ -126,18 +126,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.grid {
-  display: -ms-grid;
-  display: grid;
-  -webkit-column-count: 2;
-          column-count: 2;
-  -webkit-column-gap: 200px;
-          column-gap: 200px;
-  -ms-grid-columns: 50vw 50vw;
-      grid-template-columns: 50vw 50vw;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+.flexbox-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container {
@@ -157,7 +149,7 @@ a:hover {
   width: 1060px;
 }
 
-.flexbox {
+.flexbox-main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +159,7 @@ a:hover {
   max-height: 29vw;
 }
 
-.flexbox a {
+.flexbox-main-container a {
   color: #0f1618;
 }
 
