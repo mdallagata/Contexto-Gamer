@@ -23,8 +23,10 @@ nav {
   height: 70px;
   padding: 0 0 0 150px;
   img:hover {
-    box-shadow: inset 1px 1px 100px $color-amarillo;
-    border-radius: 10px;
+    box-shadow: inset 1px 1px 100px $color-azul;
+    border-radius: 12px;
+    border-style: groove;
+    border-color: $color-azul;
   }
 }
 header {
@@ -49,6 +51,9 @@ main {
 article {
   margin-bottom: 80px;
   max-width: 950px;
+  h1 {
+    font-size: 50px;
+  }
 }
 footer {
   color: $color-negro;
@@ -65,7 +70,7 @@ iframe {
   width: 950px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 h2 {
   font-size: 30px;
@@ -88,9 +93,6 @@ a {
   }
 }
 
-.sombra-amarilla {
-  text-shadow: 2px 2px 3px $color-amarillo;
-}
 .div-big {
   margin-bottom: 100px;
   width: 1060px;

@@ -31,9 +31,11 @@ nav {
 }
 
 nav img:hover {
-  -webkit-box-shadow: inset 1px 1px 100px #ebd404;
-          box-shadow: inset 1px 1px 100px #ebd404;
-  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 100px #2969d1;
+          box-shadow: inset 1px 1px 100px #2969d1;
+  border-radius: 12px;
+  border-style: groove;
+  border-color: #2969d1;
 }
 
 header {
@@ -77,6 +79,10 @@ article {
   max-width: 950px;
 }
 
+article h1 {
+  font-size: 50px;
+}
+
 footer {
   color: #0f1618;
   background-color: #ffffff;
@@ -95,7 +101,7 @@ iframe {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h2 {
@@ -122,10 +128,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.sombra-amarilla {
-  text-shadow: 2px 2px 3px #ebd404;
 }
 
 .div-big {
