@@ -120,7 +120,8 @@ a:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 60vw;
+  max-width: 56vw;
+  max-height: 29vw;
 }
 
 .children {
