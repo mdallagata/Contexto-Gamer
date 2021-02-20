@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>
+      Portal 2 gets co-op improvements and Vulkan support in a new update
+    </title>
+  </head>
+  <body>
+    <nav class="flexbox-nav">
+      <div class="container">
+        <a href="./index.html">
+          <img id="logo" src="assets/logo.png" alt="Logo de Contexto Gamer"
+        /></a>
+        <h1>CONTEXTO GAMER</h1>
+      </div>
+      <div class="container">
+        <a
+          target="_blank"
+          href="https://www.facebook.com/Contexto-Gamer-829139870763649/?__tn__=%3C"
+        >
+          <img
+            src="./assets/fb.png"
+            alt="ícono de Facebook de Contexto Gamer"
+            class="image-icon"
+        /></a>
+        <a target="_blank" href="#">
+          <img
+            src="./assets/ig.png"
+            alt="ícono de Instagram de Contexto Gamer"
+            class="image-icon"
+        /></a>
+        <a target="_blank" href="#">
+          <img
+            src="./assets/yt.png"
+            alt="ícono de Youtube de Contexto Gamer"
+            class="image-icon"
+        /></a>
+        <a target="_blank" href="#">
+          <img
+            src="./assets/t.png"
+            alt="ícono de Twitter de Contexto Gamer"
+            class="image-icon"
+        /></a>
+        <a target="_blank" href="https://cutt.ly/Kg2zTz0">
+          <img
+            src="./assets/ws.png"
+            alt="ícono de WhatsApp de Contexto Gamer"
+            class="image-icon"
+        /></a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>
+        <a href="./index.html">
+          <img
+            class="image-icon"
+            src="./assets/home.png"
+            alt="Ícono del índice"
+        /></a>
+        <a href="#">Noticias</a>
+        <a href="#">Reviews</a>
+        <a href="#">Hardware</a>
+        <a href="#">Foro</a>
+        <a href="#">Más</a>
+      </h1>
+    </header>
+
+    <main>
+      <article>
+        <h1>
+          Portal 2 gets co-op improvements and Vulkan support in a new update
+        </h1>
+        <p>By <a href="#">Andy Chalk</a> a day ago</p>
+        <br />
+        <h3>The new patch for the 10-year-old game is now live on Steam.</h3>
+
+        <img
+          class="image-medium"
+          src="./assets/portal2.webp"
+          alt="Imagen de Portal 2"
+        />
+        <h5>(Image credit: Valve)</h5>
+
+        <p>
+          Valve's puzzle-platformer-teleportationer Portal 2 was released to
+          great acclaim on April 19, 2011. It was a tremendous success, and
+          remains popular to this day. According to SteamCharts, there are at
+          this very moment more than 3100 people playing it—not bad at all for a
+          decade-old puzzle game.
+        </p>
+        <p>
+          It's not just gamers who keep playing with it: So is Valve, which
+          dropped a new update yesterday that, among other things, adds support
+          for Vulkan rendering, improves advanced video setting descriptions,
+          makes default video settings "smarter," and speeds up the compile time
+          for user-made Perpetual Testing Initiative puzzles.
+        </p>
+        <p>Here's the full rundown of what's changed:</p>
+
+        <ul>
+          <li>
+            Implemented a Vulkan render backend (currently accessible through
+            the -vulkan command line parameter).
+          </li>
+          <li>
+            Improved compile time for Perpetual Training Initiative puzzles.
+          </li>
+          <li>
+            Improved compile time for Perpetual Training Initiative puzzles.
+          </li>
+          <li>Made the game Hi-DPI aware.</li>
+          <li>Smarter default video settings.</li>
+          <li>Improved resolution of player avatars throughout the game.</li>
+          <li>Players can now be invited to play co-op on controller.</li>
+          <li>
+            Button text contrast and padding has been improved when using a
+            controller.
+          </li>
+          <li>Implemented a 360° Spin action.</li>
+          <li>
+            The portalgun is now correctly affected by dynamic lights (projected
+            textures) in the scene.
+          </li>
+          <li>Improved client-side prediction for coop play.</li>
+          <li>
+            Added the ability for workshop levels to pack particles into their
+            map with a particles/map_manifest.txt
+          </li>
+          <li>Misc. rendering optimizations.</li>
+          <li>Added an icon to the game on Linux.</li>
+          <li>Removed the "Trading Coming Soon" button.</li>
+        </ul>
+
+        <p>And there are a bunch of bug fixes as well:</p>
+        <ul>
+          <li>Fixed a crash on startup that could happen on Linux.</li>
+          <li>
+            Fixed a crash that could occur in some community test chambers using
+            BEEMod on Linux.
+          </li>
+          <li>Fixed the credits being corrupted on Linux.</li>
+          <li>Fixed the intro videos for acts 2 and 3 not playing on Linux.</li>
+          <li>
+            Fixed the game starting in the top left corner of the screen on
+            Linux.
+          </li>
+          <li>
+            Fixed a crash in the PeTI if you placed a light strip above a laser
+            catcher on the floor and linked it to a fizzler.
+          </li>
+          <li>
+            Fixed the fizzler not playing the retract animation when turned off
+            in new PeTI maps.
+          </li>
+          <li>
+            Fixed being able to copy 'uncopyable' items in the PeTI leading to
+            invalid/broken levels.
+          </li>
+          <li>
+            Fixed some items in PeTI not maintaining their portalability state
+            when expanding the chamber boundaries.
+          </li>
+          <li>Fixed a crash if PeTI avatars could not be retrieved.</li>
+          <li>
+            Fixed Cave Johnson's lines not progressing when playing queued
+            workshop levels.
+          </li>
+          <li>Fixed a memory leak that could occur when changing levels.</li>
+          <li>
+            Fixed a bug where you could no longer ping/taunt via mouse/keyboard
+            if you have ever used a controller.
+          </li>
+          <li>
+            Fixed the ping menu being visible when quick pinging on controller.
+          </li>
+          <li>
+            Fixed the game instructor not respecting input types for respective
+            players in split-screen mode.
+          </li>
+          <li>
+            Fixed rumble not being respected for respective players in
+            split-screen mode.
+          </li>
+          <li>
+            Fixed the wrong avatar being used if playing coop after playing a
+            workshop level.
+          </li>
+          <li>Fixed the OnFiredPortal2 output not firing.</li>
+          <li>
+            Fixed some text being duplicated on the screen multiple times.
+          </li>
+        </ul>
+        <p>
+          It's not clear why Valve is still patching Portal 2—I respect the
+          dedication, but it is a 10-year-old game—but this isn't actually as
+          out-of-nowhere as it might seem. Valve has been slowly, but fairly
+          steadily, releasing Portal 2 patches since mid-2017, the last one a
+          smaller scale fixer-upper that landed in July 2020.
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Contexto Gamer es parte de Future US Inc, un grupo de medios
+        internacional y editor digital líder.
+        <a>Visita nuestro sitio web corporativo.</a>
+      </p>
+      <hr />
+      <p>
+        <a href="#">About Us</a>
+        <a href="#">Terms and conditions</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookies policy</a>
+        <a href="#">Advertise with us</a>
+        <a href="#">Accessibility Statement</a>
+        <br />
+        © Future US, Inc. 11 West 42nd Street, 15th Floor, New York, NY 10036.
+      </p>
+      <p>
+        Iconos diseñados por
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+      </p>
+    </footer>
+  </body>
+</html>
