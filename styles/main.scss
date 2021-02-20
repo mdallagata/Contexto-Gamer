@@ -22,20 +22,26 @@ nav {
   align-items: center;
   height: 70px;
   padding: 0 0 0 150px;
+  img:hover {
+    box-shadow: inset 1px 1px 100px $color-amarillo;
+    border-radius: 10px;
+  }
 }
 header {
   background-color: $color-amarillo;
-  color: $color-negro;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   border-radius: 0 0 10px 10px;
   box-shadow: 5px 5px 15px 5px $color-amarillo;
+  a {
+    color: $color-negro;
+  }
 }
 main {
   color: $color-negro;
-  padding: 90px 180px 125px 180px;
+  padding: 90px 180px 130px 180px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -48,7 +54,15 @@ footer {
   color: $color-negro;
   background-color: $color-blanco;
   text-align: center;
-  height: 250px;
+  height: 150px;
+  p {
+    padding: 7px;
+  }
+}
+iframe {
+  border: none;
+  height: 600px;
+  width: 950px;
 }
 h1 {
   font-size: 40px;
@@ -70,7 +84,7 @@ a {
   color: $color-azul;
   text-decoration: none;
   &:hover {
-    text-shadow: 1px 1px 10px $color-blanco;
+    text-decoration: underline;
   }
 }
 
@@ -86,6 +100,9 @@ a {
   flex-wrap: wrap;
   max-width: 56vw;
   max-height: 29vw;
+  a {
+    color: $color-negro;
+  }
 }
 .children {
   max-width: 325px;
