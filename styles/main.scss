@@ -11,34 +11,44 @@ body {
   background-color: $color-blanco-gris;
   font-family: "Roboto", sans-serif;
   text-align: left;
-}
-main {
-  color: $color-negro;
-  padding: 60px 180px 60px 180px;
+  transition: 1s;
 }
 nav {
   background-color: $color-negro;
   color: $color-blanco;
+  text-shadow: 2px 2px 10px $color-amarillo;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   height: 70px;
+  padding: 0 0 0 150px;
 }
 header {
   background-color: $color-amarillo;
   color: $color-negro;
   display: flex;
   justify-content: center;
-  height: 70px;
+  align-items: center;
+  height: 50px;
   border-radius: 0 0 10px 10px;
+  box-shadow: 5px 5px 15px 5px $color-amarillo;
+}
+main {
+  color: $color-negro;
+  padding: 90px 180px 125px 180px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 article {
   margin-bottom: 80px;
+  max-width: 950px;
 }
 footer {
-  color: $color-blanco;
-  background-color: $color-gris;
+  color: $color-negro;
+  background-color: $color-blanco;
   text-align: center;
-  height: 160px;
+  height: 250px;
 }
 h1 {
   font-size: 40px;
@@ -50,38 +60,35 @@ h3 {
   font-size: 25px;
 }
 h4 {
-  font-size: 15px;
-  padding: 0px 0px 25px 0px;
+  font-size: 19px;
 }
 p {
   padding: 20px 0px 30px 0px;
   font-size: 23px;
 }
-a:visited {
-  color: $color-negro;
-}
-a:hover {
-  color: $color-amarillo;
-  background-color: $color-negro;
+a {
+  color: $color-azul;
+  text-decoration: none;
+  &:hover {
+    text-shadow: 1px 1px 10px $color-blanco;
+  }
 }
 
-.grid {
-  display: grid;
-  grid-row-gap: 250px;
-  grid-column-gap: 310px;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: 50px 50px 0px;
+.sombra-amarilla {
+  text-shadow: 2px 2px 3px $color-amarillo;
 }
-.article-big {
-  width: 950px;
+.div-big {
+  margin-bottom: 100px;
+  width: 1060px;
 }
-.div-amarillo {
-  margin-top: 80px;
-  background-color: $color-amarillo;
-  width: 300px;
-  height: 80px;
+.flexbox {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 60vw;
+}
+.children {
+  max-width: 325px;
+  margin: 0 15px 15px 15px;
 }
 .div-negro {
   background-color: $color-negro;
@@ -89,20 +96,36 @@ a:hover {
   width: 1050px;
   height: 80px;
   display: flex;
+  text-align: center;
+  align-items: center;
   justify-content: left;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px -30px 0px 0px $color-amarillo;
 }
 .div-blanco {
   background-color: $color-blanco;
-  color: $color-negro;
   width: 325px;
   height: 80px;
   display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px -30px 0px 0px $color-amarillo;
 }
-
+.div-amarillo {
+  margin-top: 80px;
+  background-color: $color-amarillo;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .image-big {
   width: 1050px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 .image-medium {
   width: 950px;
@@ -110,5 +133,12 @@ a:hover {
 }
 .image-small {
   width: 325px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+}
+.image-icon {
+  width: 40px;
+  margin-left: 25px;
+}
+#logo {
+  height: 50px;
 }

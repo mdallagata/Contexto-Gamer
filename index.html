@@ -10,33 +10,50 @@
 
   <body>
     <nav>
-      <img src="assets/logo.jpg" height="60" alt="Logo de Contexto Gamer" />
-      <h1>CONTEXTO GAMER</h1>
-
-      <a target="_blank" href="#">
+      <img id="logo" src="assets/logo.png" alt="Logo de Contexto Gamer" />
+      <h2>CONTEXTO GAMER</h2>
+      <a
+        target="_blank"
+        href="https://www.facebook.com/Contexto-Gamer-829139870763649/?__tn__=%3C"
+      >
         <img
-          src="./assets/ig.jpg"
-          height="60"
-          alt="ícono de Instagram de Contexto Gamer"
+          src="./assets/fb.png"
+          alt="ícono de Facebook de Contexto Gamer"
+          class="image-icon"
       /></a>
       <a target="_blank" href="#">
         <img
-          src="./assets/yt.jpg"
-          height="60"
+          src="./assets/ig.png"
+          alt="ícono de Instagram de Contexto Gamer"
+          class="image-icon"
+      /></a>
+      <a target="_blank" href="#">
+        <img
+          src="./assets/yt.png"
           alt="ícono de Youtube de Contexto Gamer"
+          class="image-icon"
       /></a>
       <a target="_blank" href="#">
         <img
           src="./assets/t.png"
-          height="60"
           alt="ícono de Twitter de Contexto Gamer"
+          class="image-icon"
+      /></a>
+      <a target="_blank" href="https://cutt.ly/Kg2zTz0">
+        <img
+          src="./assets/ws.png"
+          alt="ícono de WhatsApp de Contexto Gamer"
+          class="image-icon"
       /></a>
     </nav>
 
     <header>
       <h2>
         <a href="./index.html">
-          <img src="./assets/home.png" alt="Ícono de Indice"
+          <img
+            class="image-icon"
+            src="./assets/home.png"
+            alt="Ícono del índice"
         /></a>
         <a href="#">Noticias</a>
         <a href="#">Reviews</a>
@@ -48,7 +65,7 @@
 
     <main>
       <!-- Artículo Grande -->
-      <article class="article-big">
+      <div class="div-big">
         <a href="./article-codghosts.html">
           <img
             class="image-big"
@@ -56,16 +73,14 @@
             alt="Imagen de Resident Evil 4"
           />
           <div class="div-negro">
-            <h2>
-              I played the worst Call of Duty in 2021 and deserved what I got
-            </h2>
+            <h2>Jugue al peor Call of Duty en 2021 asi me fué</h2>
           </div>
         </a>
-      </article>
+      </div>
 
       <!-- Artículos en Grid -->
-      <section class="grid">
-        <article>
+      <section class="flexbox">
+        <div class="children">
           <a href="./article-fortnite.html">
             <img
               class="image-small"
@@ -74,13 +89,13 @@
             />
             <div class="div-blanco">
               <h4>
-                Fortnite 15.40 Patch Notes: Every new weapon, skins, bug fixes,
-                and more
+                Fortnite 15.40 Notas del Parche: Cada arma, skins, arrgeglos de
+                bugs y más
               </h4>
             </div>
           </a>
-        </article>
-        <article>
+        </div>
+        <div class="children">
           <a href="./article-re4.html">
             <img
               class="image-small"
@@ -89,12 +104,12 @@
             />
             <div class="div-blanco">
               <h4>
-                The ultimate guide to getting into the Resident Evil games
+                La super-guía para adentrarse en los juegos de Resident Evil
               </h4>
             </div>
           </a>
-        </article>
-        <article>
+        </div>
+        <div class="children">
           <a href="./article-re4.html">
             <img
               class="image-small"
@@ -105,8 +120,8 @@
               <h4>How Treyarch escaped Infinity Ward's shadow</h4>
             </div>
           </a>
-        </article>
-        <article>
+        </div>
+        <div class="children">
           <a href="./article-re4.html">
             <img
               class="image-small"
@@ -117,8 +132,8 @@
               <h4>Valheim is making me love survival games again</h4>
             </div>
           </a>
-        </article>
-        <article>
+        </div>
+        <div class="children">
           <a href="./article-re4.html">
             <img
               class="image-small"
@@ -131,8 +146,8 @@
               </h4>
             </div>
           </a>
-        </article>
-        <article>
+        </div>
+        <div class="children">
           <a href="./article-re4.html">
             <img
               class="image-small"
@@ -145,14 +160,15 @@
               </h4>
             </div>
           </a>
-        </article>
+        </div>
       </section>
     </main>
 
     <footer>
       <p>
-        PC Gamer is part of Future US Inc, an international media group and
-        leading digital publisher. Visit our corporate site.
+        Contexto Gamer es parte de Future US Inc, un grupo de medios
+        internacional y editor digital líder.
+        <a>Visita nuestro sitio web corporativo.</a>
       </p>
       <hr />
       <p>
@@ -164,6 +180,11 @@
         <a href="#">Accessibility Statement</a>
         <br />
         © Future US, Inc. 11 West 42nd Street, 15th Floor, New York, NY 10036.
+      </p>
+      <p>
+        Iconos diseñados por
+        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+        <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
       </p>
     </footer>
   </body>
