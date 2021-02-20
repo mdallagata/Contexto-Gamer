@@ -1,4 +1,3 @@
-/* cambiar a href*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
@@ -17,23 +16,26 @@ body {
 
 nav {
   background-color: #0f1618;
-  color: #ffffff;
-  text-shadow: 2px 2px 10px #f3db01;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 10px #007965;
+  border-bottom: 8px groove #007965;
   height: 70px;
-  padding: 0 0 0 150px;
+}
+
+nav img:hover {
+  -webkit-box-shadow: inset 1px 1px 100px #007965;
+          box-shadow: inset 1px 1px 100px #007965;
+  border-radius: 12px;
+  border-style: groove;
+  border-color: #007965;
+}
+
+nav h1:hover {
+  text-shadow: 2px 2px 10px #ffcc29;
 }
 
 header {
-  background-color: #f3db01;
-  color: #0f1618;
+  background-color: #ffcc29;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,13 +47,17 @@ header {
           align-items: center;
   height: 50px;
   border-radius: 0 0 10px 10px;
-  -webkit-box-shadow: 5px 5px 15px 5px #f3db01;
-          box-shadow: 5px 5px 15px 5px #f3db01;
+  -webkit-box-shadow: 5px 5px 15px 5px #ffcc29;
+          box-shadow: 5px 5px 15px 5px #ffcc29;
+}
+
+header a {
+  color: #0f1618;
 }
 
 main {
   color: #0f1618;
-  padding: 90px 180px 125px 180px;
+  padding: 90px 180px 130px 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,15 +75,29 @@ article {
   max-width: 950px;
 }
 
+article h1 {
+  font-size: 50px;
+}
+
 footer {
-  color: #0f1618;
-  background-color: #ffffff;
+  color: #666;
+  background-color: #fff;
   text-align: center;
-  height: 250px;
+  height: 150px;
+}
+
+footer p {
+  padding: 7px;
+}
+
+iframe {
+  border: none;
+  height: 600px;
+  width: 950px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h2 {
@@ -98,16 +118,30 @@ p {
 }
 
 a {
-  color: #2969d1;
+  color: #007965;
   text-decoration: none;
 }
 
 a:hover {
-  text-shadow: 1px 1px 10px #ffffff;
+  text-decoration: underline;
 }
 
-.sombra-amarilla {
-  text-shadow: 2px 2px 3px #f3db01;
+.flexbox-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  margin-left: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 450px;
+  max-height: 70px;
 }
 
 .div-big {
@@ -115,13 +149,18 @@ a:hover {
   width: 1060px;
 }
 
-.flexbox {
+.flexbox-main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 60vw;
+  max-width: 56vw;
+  max-height: 29vw;
+}
+
+.flexbox-main-container a {
+  color: #0f1618;
 }
 
 .children {
@@ -129,9 +168,9 @@ a:hover {
   margin: 0 15px 15px 15px;
 }
 
-.div-negro {
-  background-color: #0f1618;
-  color: #ffffff;
+.div-verde {
+  background-color: #007965;
+  color: #fff;
   width: 1050px;
   height: 80px;
   display: -webkit-box;
@@ -141,16 +180,21 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0 0 8px 8px;
-  -webkit-box-shadow: 0px -30px 0px 0px #f3db01;
-          box-shadow: 0px -30px 0px 0px #f3db01;
+  -webkit-box-shadow: 0px -30px 0px 0px #f58634;
+          box-shadow: 0px -30px 0px 0px #f58634;
+}
+
+.div-verde:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .div-blanco {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 325px;
   height: 80px;
   display: -webkit-box;
@@ -164,13 +208,13 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 0 0 8px 8px;
-  -webkit-box-shadow: 0px -30px 0px 0px #f3db01;
-          box-shadow: 0px -30px 0px 0px #f3db01;
+  -webkit-box-shadow: 0px -30px 0px 0px #f58634;
+          box-shadow: 0px -30px 0px 0px #f58634;
 }
 
 .div-amarillo {
   margin-top: 80px;
-  background-color: #f3db01;
+  background-color: #ffcc29;
   width: 300px;
   height: 40px;
   display: -webkit-box;

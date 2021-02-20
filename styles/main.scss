@@ -16,26 +16,35 @@ body {
 nav {
   background-color: $color-negro;
   color: $color-blanco;
-  text-shadow: 2px 2px 10px $color-amarillo;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-shadow: 2px 2px 10px $color-verde;
+  border-bottom: 8px groove $color-verde;
   height: 70px;
-  padding: 0 0 0 150px;
+
+  img:hover {
+    box-shadow: inset 1px 1px 100px $color-verde;
+    border-radius: 12px;
+    border-style: groove;
+    border-color: $color-verde;
+  }
+  h1:hover {
+    text-shadow: 2px 2px 10px $color-amarillo;
+  }
 }
 header {
   background-color: $color-amarillo;
-  color: $color-negro;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   border-radius: 0 0 10px 10px;
   box-shadow: 5px 5px 15px 5px $color-amarillo;
+  a {
+    color: $color-negro;
+  }
 }
 main {
   color: $color-negro;
-  padding: 90px 180px 125px 180px;
+  padding: 90px 180px 130px 180px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -43,15 +52,26 @@ main {
 article {
   margin-bottom: 80px;
   max-width: 950px;
+  h1 {
+    font-size: 50px;
+  }
 }
 footer {
-  color: $color-negro;
+  color: $color-gris;
   background-color: $color-blanco;
   text-align: center;
-  height: 250px;
+  height: 150px;
+  p {
+    padding: 7px;
+  }
+}
+iframe {
+  border: none;
+  height: 600px;
+  width: 950px;
 }
 h1 {
-  font-size: 40px;
+  font-size: 38px;
 }
 h2 {
   font-size: 30px;
@@ -67,40 +87,55 @@ p {
   font-size: 23px;
 }
 a {
-  color: $color-azul;
+  color: $color-verde;
   text-decoration: none;
   &:hover {
-    text-shadow: 1px 1px 10px $color-blanco;
+    text-decoration: underline;
   }
 }
 
-.sombra-amarilla {
-  text-shadow: 2px 2px 3px $color-amarillo;
+.flexbox-nav {
+  display: flex;
+}
+.container {
+  margin-left: 400px;
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  max-height: 70px;
 }
 .div-big {
   margin-bottom: 100px;
   width: 1060px;
 }
-.flexbox {
+.flexbox-main-container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 60vw;
+  max-width: 56vw;
+  max-height: 29vw;
+  a {
+    color: $color-negro;
+  }
 }
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
 }
-.div-negro {
-  background-color: $color-negro;
+.div-verde {
+  background-color: $color-verde;
   color: $color-blanco;
   width: 1050px;
   height: 80px;
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-amarillo;
+  box-shadow: 0px -30px 0px 0px $color-naranja;
+  &:hover {
+    color: $color-blanco;
+    text-decoration: underline;
+  }
 }
 .div-blanco {
   background-color: $color-blanco;
@@ -111,7 +146,7 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-amarillo;
+  box-shadow: 0px -30px 0px 0px $color-naranja;
 }
 .div-amarillo {
   margin-top: 80px;
