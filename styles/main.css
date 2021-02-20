@@ -12,6 +12,9 @@ body {
   text-align: left;
   -webkit-transition: 1s;
   transition: 1s;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(77%, #ededed), to(#fff));
+  background: linear-gradient(to bottom, #ededed 0%, #ededed 77%, #fff 100%);
 }
 
 nav {
@@ -57,7 +60,7 @@ header a {
 
 main {
   color: #0f1618;
-  padding: 90px 180px 130px 180px;
+  padding: 90px 180px 140px 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +84,6 @@ article h1 {
 
 footer {
   color: #666;
-  background-color: #fff;
   text-align: center;
   height: 150px;
 }
@@ -126,6 +128,22 @@ a:hover {
   text-decoration: underline;
 }
 
+ul {
+  font-size: 23px;
+  padding: 15px 0px 15px 60px;
+}
+
+.border-verde, .div-big, .children {
+  border-style: solid;
+  border-color: #007965;
+  border-radius: 8px 8px 8px 8px;
+  border-left: none;
+  border-right: none;
+  border-width: 4px;
+  -webkit-box-shadow: inset 1px 1px 1px 10px #007965;
+          box-shadow: inset 1px 1px 1px 10px #007965;
+}
+
 .flexbox-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,7 +164,8 @@ a:hover {
 
 .div-big {
   margin-bottom: 100px;
-  width: 1060px;
+  width: 1050px;
+  border-bottom: none;
 }
 
 .flexbox-main-container {
@@ -157,6 +176,9 @@ a:hover {
       flex-wrap: wrap;
   max-width: 56vw;
   max-height: 29vw;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  row-gap: 5px;
 }
 
 .flexbox-main-container a {
@@ -166,6 +188,7 @@ a:hover {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
+  border: 10px 10px 10px 10px;
 }
 
 .div-verde {

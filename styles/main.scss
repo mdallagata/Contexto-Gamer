@@ -12,6 +12,25 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: left;
   transition: 1s;
+  background: $color-blanco-gris;
+  background: -moz-linear-gradient(
+    top,
+    $color-blanco-gris 0%,
+    $color-blanco-gris 77%,
+    $color-blanco 100%
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $color-blanco-gris 0%,
+    $color-blanco-gris 77%,
+    $color-blanco 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $color-blanco-gris 0%,
+    $color-blanco-gris 77%,
+    $color-blanco 100%
+  );
 }
 nav {
   background-color: $color-negro;
@@ -44,7 +63,7 @@ header {
 }
 main {
   color: $color-negro;
-  padding: 90px 180px 130px 180px;
+  padding: 90px 180px 140px 180px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -58,7 +77,6 @@ article {
 }
 footer {
   color: $color-gris;
-  background-color: $color-blanco;
   text-align: center;
   height: 150px;
   p {
@@ -93,7 +111,20 @@ a {
     text-decoration: underline;
   }
 }
+ul {
+  font-size: 23px;
+  padding: 15px 0px 15px 60px;
+}
 
+.border-verde {
+  border-style: solid;
+  border-color: $color-verde;
+  border-radius: 8px 8px 8px 8px;
+  border-left: none;
+  border-right: none;
+  border-width: 4px;
+  box-shadow: inset 1px 1px 1px 10px $color-verde;
+}
 .flexbox-nav {
   display: flex;
 }
@@ -106,13 +137,17 @@ a {
 }
 .div-big {
   margin-bottom: 100px;
-  width: 1060px;
+  width: 1050px;
+  @extend .border-verde;
+  border-bottom: none;
 }
 .flexbox-main-container {
   display: flex;
   flex-wrap: wrap;
   max-width: 56vw;
   max-height: 29vw;
+  column-gap: 5px;
+  row-gap: 5px;
   a {
     color: $color-negro;
   }
@@ -120,6 +155,8 @@ a {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
+  border: 10px 10px 10px 10px;
+  @extend .border-verde;
 }
 .div-verde {
   background-color: $color-verde;
