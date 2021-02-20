@@ -16,17 +16,23 @@ body {
 nav {
   background-color: $color-negro;
   color: $color-blanco;
-  text-shadow: 2px 2px 10px $color-amarillo;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-shadow: 2px 2px 10px $color-verde;
+  border-style: groove;
+  border-width: 8px;
+  border-color: $color-verde;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   height: 70px;
-  padding: 0 0 0 150px;
+
   img:hover {
-    box-shadow: inset 1px 1px 100px $color-azul;
+    box-shadow: inset 1px 1px 100px $color-verde;
     border-radius: 12px;
     border-style: groove;
-    border-color: $color-azul;
+    border-color: $color-verde;
+  }
+  h1:hover {
+    text-shadow: 2px 2px 10px $color-amarillo;
   }
 }
 header {
@@ -56,7 +62,7 @@ article {
   }
 }
 footer {
-  color: $color-negro;
+  color: $color-gris;
   background-color: $color-blanco;
   text-align: center;
   height: 150px;
@@ -86,13 +92,27 @@ p {
   font-size: 23px;
 }
 a {
-  color: $color-azul;
+  color: $color-verde;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
 }
 
+.grid {
+  display: grid;
+  column-count: 2;
+  column-gap: 200px;
+  grid-template-columns: 50vw 50vw;
+  align-items: left;
+}
+.container {
+  margin-left: 400px;
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  max-height: 70px;
+}
 .div-big {
   margin-bottom: 100px;
   width: 1060px;
@@ -110,8 +130,8 @@ a {
   max-width: 325px;
   margin: 0 15px 15px 15px;
 }
-.div-negro {
-  background-color: $color-negro;
+.div-verde {
+  background-color: $color-verde;
   color: $color-blanco;
   width: 1050px;
   height: 80px;
@@ -120,7 +140,11 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-amarillo;
+  box-shadow: 0px -30px 0px 0px $color-naranja;
+  &:hover {
+    color: $color-blanco;
+    text-decoration: underline;
+  }
 }
 .div-blanco {
   background-color: $color-blanco;
@@ -131,7 +155,7 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-amarillo;
+  box-shadow: 0px -30px 0px 0px $color-naranja;
 }
 .div-amarillo {
   margin-top: 80px;
