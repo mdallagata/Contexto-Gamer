@@ -127,6 +127,8 @@ ul {
 }
 .flexbox-nav {
   display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .container {
   margin-left: 400px;
