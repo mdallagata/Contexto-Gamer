@@ -76,6 +76,11 @@ ul {
   padding: 15px 0px 15px 60px;
 }
 
+.transparency {
+  &:hover {
+    opacity: 0.9;
+  }
+}
 .border {
   border-style: solid;
   border-radius: 8px;
@@ -101,6 +106,7 @@ ul {
   width: 1050px;
   @extend .border;
   border-bottom: none;
+  @extend .transparency;
 }
 .flexbox-main-container {
   display: flex;
@@ -117,6 +123,7 @@ ul {
   max-width: 325px;
   margin: 0 15px 15px 15px;
   @extend .border;
+  @extend .transparency;
 }
 .div-verde {
   background-color: $color-verde;

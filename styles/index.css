@@ -133,6 +133,10 @@ ul {
   padding: 15px 0px 15px 60px;
 }
 
+.transparency:hover, .div-big:hover, .children:hover {
+  opacity: 0.9;
+}
+
 .border, .div-big, .children {
   border-style: solid;
   border-radius: 8px;
