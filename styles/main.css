@@ -135,11 +135,9 @@ ul {
 
 .border-verde, .div-big, .children {
   border-style: solid;
-  border-color: #007965;
-  border-radius: 8px 8px 8px 8px;
-  border-left: none;
-  border-right: none;
-  border-width: 4px;
+  border-radius: 8px;
+  border-top: 4px solid #007965;
+  border-bottom: 4px solid #007965;
   -webkit-box-shadow: inset 1px 1px 1px 10px #007965;
           box-shadow: inset 1px 1px 1px 10px #007965;
 }
@@ -195,7 +193,6 @@ ul {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
-  border: 10px 10px 10px 10px;
 }
 
 .div-verde {

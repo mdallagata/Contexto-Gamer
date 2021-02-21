@@ -118,11 +118,9 @@ ul {
 
 .border-verde {
   border-style: solid;
-  border-color: $color-verde;
-  border-radius: 8px 8px 8px 8px;
-  border-left: none;
-  border-right: none;
-  border-width: 4px;
+  border-radius: 8px;
+  border-top: 4px solid $color-verde;
+  border-bottom: 4px solid $color-verde;
   box-shadow: inset 1px 1px 1px 10px $color-verde;
 }
 .flexbox-nav {
@@ -157,7 +155,6 @@ ul {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
-  border: 10px 10px 10px 10px;
   @extend .border-verde;
 }
 .div-verde {
