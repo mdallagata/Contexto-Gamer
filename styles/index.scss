@@ -76,11 +76,11 @@ ul {
   padding: 15px 0px 15px 60px;
 }
 
-.border-verde {
+.border {
   border-style: solid;
   border-radius: 8px;
   border: none;
-  border-top: 4px solid $color-verde;
+  border-top: 4px solid $color-naranja;
   border-bottom: 4px solid $color-verde;
   box-shadow: inset 1px 1px 1px 10px $color-verde;
 }
@@ -99,7 +99,7 @@ ul {
 .div-big {
   margin-bottom: 100px;
   width: 1050px;
-  @extend .border-verde;
+  @extend .border;
   border-bottom: none;
 }
 .flexbox-main-container {
@@ -116,7 +116,7 @@ ul {
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
-  @extend .border-verde;
+  @extend .border;
 }
 .div-verde {
   background-color: $color-verde;
@@ -146,7 +146,7 @@ ul {
   box-shadow: 0px -30px 0px 0px $color-naranja;
 }
 .div-amarillo {
-  margin-top: 80px;
+  margin-top: 35px;
   background-color: $color-amarillo;
   width: 300px;
   height: 40px;
