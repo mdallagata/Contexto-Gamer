@@ -1,0 +1,17 @@
+nav {
+  background-color: $color-negro;
+  color: $color-blanco;
+  text-shadow: 2px 2px 10px $color-verde;
+  border-bottom: 8px groove $color-verde;
+  height: 70px;
+
+  img:hover {
+    box-shadow: inset 1px 1px 100px $color-verde;
+    border-radius: 12px;
+    border-style: groove;
+    border-color: $color-verde;
+  }
+  h1:hover {
+    text-shadow: 2px 2px 10px $color-amarillo;
+  }
+}

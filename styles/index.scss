@@ -1,5 +1,8 @@
 @import "variables";
-
+@import "nav";
+@import "header";
+@import "main";
+@import "footer";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
@@ -32,55 +35,12 @@ body {
     $color-blanco 100%
   );
 }
-nav {
-  background-color: $color-negro;
-  color: $color-blanco;
-  text-shadow: 2px 2px 10px $color-verde;
-  border-bottom: 8px groove $color-verde;
-  height: 70px;
 
-  img:hover {
-    box-shadow: inset 1px 1px 100px $color-verde;
-    border-radius: 12px;
-    border-style: groove;
-    border-color: $color-verde;
-  }
-  h1:hover {
-    text-shadow: 2px 2px 10px $color-amarillo;
-  }
-}
-header {
-  background-color: $color-amarillo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 5px 5px 15px 5px $color-amarillo;
-  a {
-    color: $color-negro;
-  }
-}
-main {
-  color: $color-negro;
-  padding: 90px 180px 140px 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 article {
   margin-bottom: 80px;
   max-width: 950px;
   h1 {
     font-size: 50px;
-  }
-}
-footer {
-  color: $color-gris;
-  text-align: center;
-  height: 150px;
-  p {
-    padding: 7px;
   }
 }
 iframe {
