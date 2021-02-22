@@ -1,6 +1,10 @@
-@import "variables";
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "variables";
+@import "animations";
+@import "nav";
+@import "header";
+@import "main";
+@import "footer";
 
 * {
   margin: 0;
@@ -32,55 +36,12 @@ body {
     $color-blanco 100%
   );
 }
-nav {
-  background-color: $color-negro;
-  color: $color-blanco;
-  text-shadow: 2px 2px 10px $color-verde;
-  border-bottom: 8px groove $color-verde;
-  height: 70px;
 
-  img:hover {
-    box-shadow: inset 1px 1px 100px $color-verde;
-    border-radius: 12px;
-    border-style: groove;
-    border-color: $color-verde;
-  }
-  h1:hover {
-    text-shadow: 2px 2px 10px $color-amarillo;
-  }
-}
-header {
-  background-color: $color-amarillo;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 5px 5px 15px 5px $color-amarillo;
-  a {
-    color: $color-negro;
-  }
-}
-main {
-  color: $color-negro;
-  padding: 90px 180px 140px 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 article {
   margin-bottom: 80px;
   max-width: 950px;
   h1 {
     font-size: 50px;
-  }
-}
-footer {
-  color: $color-gris;
-  text-align: center;
-  height: 150px;
-  p {
-    padding: 7px;
   }
 }
 iframe {
@@ -101,7 +62,7 @@ h4 {
   font-size: 19px;
 }
 p {
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0 30px 0;
   font-size: 23px;
 }
 a {
@@ -113,14 +74,20 @@ a {
 }
 ul {
   font-size: 23px;
-  padding: 15px 0px 15px 60px;
+  padding: 15px 0 15px 60px;
+  animation-name: slidein;
+  animation-duration: 2s;
 }
 
-.border-verde {
-  border-style: solid;
+.transparency {
+  &:hover {
+    opacity: 0.9;
+  }
+}
+.border {
   border-radius: 8px;
   border: none;
-  border-top: 4px solid $color-verde;
+  border-top: 4px solid $color-naranja;
   border-bottom: 4px solid $color-verde;
   box-shadow: inset 1px 1px 1px 10px $color-verde;
 }
@@ -139,10 +106,12 @@ ul {
 .div-big {
   margin-bottom: 100px;
   width: 1050px;
-  @extend .border-verde;
+  @extend .border;
   border-bottom: none;
+  @extend .transparency;
 }
 .flexbox-main-container {
+  margin-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
   max-width: 56vw;
@@ -152,11 +121,14 @@ ul {
   a {
     color: $color-negro;
   }
+  animation-name: slidein;
+  animation-duration: 1s;
 }
 .children {
   max-width: 325px;
   margin: 0 15px 15px 15px;
-  @extend .border-verde;
+  @extend .border;
+  @extend .transparency;
 }
 .div-verde {
   background-color: $color-verde;
@@ -168,7 +140,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-naranja;
+  box-shadow: 0 -30px 0 0 $color-naranja;
   &:hover {
     color: $color-blanco;
     text-decoration: underline;
@@ -183,10 +155,10 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-naranja;
+  box-shadow: 0 -30px 0 0 $color-naranja;
 }
 .div-amarillo {
-  margin-top: 80px;
+  margin-top: 35px;
   background-color: $color-amarillo;
   width: 300px;
   height: 40px;

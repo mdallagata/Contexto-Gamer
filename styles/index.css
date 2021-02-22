@@ -1,36 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@-webkit-keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-
-body {
-  background-color: #ededed;
-  font-family: "Roboto", sans-serif;
-  text-align: left;
-  -webkit-transition: 1s;
-  transition: 1s;
-  background: #ededed;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(77%, #ededed), to(#fff));
-  background: linear-gradient(to bottom, #ededed 0%, #ededed 77%, #fff 100%);
+@keyframes slideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 nav {
   background-color: #0f1618;
   color: #fff;
-  text-shadow: 2px 2px 10px #007965;
-  border-bottom: 8px groove #007965;
+  text-shadow: 2px 2px 10px #666;
+  border-bottom: 8px groove #f58634;
   height: 70px;
 }
 
 nav img:hover {
   -webkit-box-shadow: inset 1px 1px 100px #007965;
           box-shadow: inset 1px 1px 100px #007965;
+  border: 1px groove #007965;
   border-radius: 12px;
-  border-style: groove;
-  border-color: #007965;
 }
 
 nav h1:hover {
@@ -60,7 +62,7 @@ header a {
 
 main {
   color: #0f1618;
-  padding: 90px 180px 140px 180px;
+  padding: 90px 180px 0 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,15 +75,6 @@ main {
           align-items: center;
 }
 
-article {
-  margin-bottom: 80px;
-  max-width: 950px;
-}
-
-article h1 {
-  font-size: 50px;
-}
-
 footer {
   color: #666;
   text-align: center;
@@ -90,6 +83,33 @@ footer {
 
 footer p {
   padding: 7px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #ededed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ededed), color-stop(77%, #ededed), to(#fff));
+  background: linear-gradient(to bottom, #ededed 0%, #ededed 77%, #fff 100%);
+}
+
+article {
+  margin-bottom: 80px;
+  max-width: 950px;
+}
+
+article h1 {
+  font-size: 50px;
 }
 
 iframe {
@@ -115,7 +135,7 @@ h4 {
 }
 
 p {
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0 30px 0;
   font-size: 23px;
 }
 
@@ -130,14 +150,21 @@ a:hover {
 
 ul {
   font-size: 23px;
-  padding: 15px 0px 15px 60px;
+  padding: 15px 0 15px 60px;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
-.border-verde, .div-big, .children {
-  border-style: solid;
+.transparency:hover, .div-big:hover, .children:hover {
+  opacity: 0.9;
+}
+
+.border, .div-big, .children {
   border-radius: 8px;
   border: none;
-  border-top: 4px solid #007965;
+  border-top: 4px solid #f58634;
   border-bottom: 4px solid #007965;
   -webkit-box-shadow: inset 1px 1px 1px 10px #007965;
           box-shadow: inset 1px 1px 1px 10px #007965;
@@ -175,6 +202,7 @@ ul {
 }
 
 .flexbox-main-container {
+  margin-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +213,10 @@ ul {
   -webkit-column-gap: 5px;
           column-gap: 5px;
   row-gap: 5px;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .flexbox-main-container a {
@@ -212,8 +244,8 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 0 0 8px 8px;
-  -webkit-box-shadow: 0px -30px 0px 0px #f58634;
-          box-shadow: 0px -30px 0px 0px #f58634;
+  -webkit-box-shadow: 0 -30px 0 0 #f58634;
+          box-shadow: 0 -30px 0 0 #f58634;
 }
 
 .div-verde:hover {
@@ -236,12 +268,12 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 0 0 8px 8px;
-  -webkit-box-shadow: 0px -30px 0px 0px #f58634;
-          box-shadow: 0px -30px 0px 0px #f58634;
+  -webkit-box-shadow: 0 -30px 0 0 #f58634;
+          box-shadow: 0 -30px 0 0 #f58634;
 }
 
 .div-amarillo {
-  margin-top: 80px;
+  margin-top: 35px;
   background-color: #ffcc29;
   width: 300px;
   height: 40px;
@@ -280,4 +312,4 @@ ul {
 #logo {
   height: 50px;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */
