@@ -1,4 +1,5 @@
 @import "variables";
+@import "animations";
 @import "nav";
 @import "header";
 @import "main";
@@ -74,6 +75,8 @@ a {
 ul {
   font-size: 23px;
   padding: 15px 0px 15px 60px;
+  animation-name: slidein;
+  animation-duration: 2s;
 }
 
 .transparency {
@@ -118,6 +121,8 @@ ul {
   a {
     color: $color-negro;
   }
+  animation-name: slidein;
+  animation-duration: 1s;
 }
 .children {
   max-width: 325px;
