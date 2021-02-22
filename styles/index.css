@@ -63,7 +63,7 @@ header a {
 
 main {
   color: #0f1618;
-  padding: 90px 180px 140px 180px;
+  padding: 90px 180px 0px 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,6 +204,7 @@ ul {
 }
 
 .flexbox-main-container {
+  margin-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

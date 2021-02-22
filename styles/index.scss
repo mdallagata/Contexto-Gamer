@@ -112,6 +112,7 @@ ul {
   @extend .transparency;
 }
 .flexbox-main-container {
+  margin-bottom: 150px;
   display: flex;
   flex-wrap: wrap;
   max-width: 56vw;
