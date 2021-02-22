@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "variables";
 @import "animations";
 @import "nav";
 @import "header";
 @import "main";
 @import "footer";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -62,7 +62,7 @@ h4 {
   font-size: 19px;
 }
 p {
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0 30px 0;
   font-size: 23px;
 }
 a {
@@ -74,7 +74,7 @@ a {
 }
 ul {
   font-size: 23px;
-  padding: 15px 0px 15px 60px;
+  padding: 15px 0 15px 60px;
   animation-name: slidein;
   animation-duration: 2s;
 }
@@ -141,7 +141,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-naranja;
+  box-shadow: 0 -30px 0 0 $color-naranja;
   &:hover {
     color: $color-blanco;
     text-decoration: underline;
@@ -156,7 +156,7 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 0 0 8px 8px;
-  box-shadow: 0px -30px 0px 0px $color-naranja;
+  box-shadow: 0 -30px 0 0 $color-naranja;
 }
 .div-amarillo {
   margin-top: 35px;
