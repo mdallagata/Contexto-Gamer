@@ -1,0 +1,5 @@
+@mixin flex-side($variable1, $variable2) {
+  display: flex;
+  justify-content: $variable1;
+  align-items: $variable1;
+}
