@@ -5,6 +5,7 @@
 @import "header";
 @import "main";
 @import "footer";
+@import "mixins";
 
 * {
   margin: 0;
@@ -99,7 +100,7 @@ ul {
 .container {
   margin-left: 400px;
   display: flex;
-  align-items: center;
+  @include flexPlusSides(center, center, center);
   max-width: 450px;
   max-height: 70px;
 }
@@ -135,10 +136,7 @@ ul {
   color: $color-blanco;
   width: 1050px;
   height: 80px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @include flexPlusSides(center, center, center);
   border-radius: 0 0 8px 8px;
   box-shadow: 0 -30px 0 0 $color-naranja;
   &:hover {
@@ -150,10 +148,7 @@ ul {
   background-color: $color-blanco;
   width: 325px;
   height: 80px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @include flexPlusSides(center, center, center);
   border-radius: 0 0 8px 8px;
   box-shadow: 0 -30px 0 0 $color-naranja;
 }
@@ -162,10 +157,7 @@ ul {
   background-color: $color-amarillo;
   width: 300px;
   height: 40px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  @include flexPlusSides(center, center, center);
 }
 .image-big {
   width: 1050px;
