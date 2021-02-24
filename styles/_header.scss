@@ -9,4 +9,8 @@ header {
   a {
     color: $color-negro;
   }
+  img:hover {
+    border: none;
+    border-bottom: 4px solid $color-negro;
+  }
 }
