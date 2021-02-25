@@ -1,0 +1,6 @@
+@mixin flexPlusSides($variable1, $variable2, $variable3) {
+  display: flex;
+  justify-content: $variable1;
+  align-items: $variable2;
+  text-align: $variable3;
+}
