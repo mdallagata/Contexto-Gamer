@@ -77,8 +77,6 @@ a {
 ul {
   font-size: 23px;
   padding: 15px 0 15px 60px;
-  animation-name: slidein;
-  animation-duration: 2s;
 }
 
 .transparency {
@@ -123,7 +121,7 @@ ul {
   a {
     color: $color-negro;
   }
-  animation-name: slidein;
+  animation-name: slideIn;
   animation-duration: 1s;
 }
 .children {
@@ -175,6 +173,11 @@ ul {
 .image-icon {
   width: 37px;
   margin-left: 25px;
+}
+.opacity {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-direction: alternate-reverse;
 }
 #logo {
   height: 46px;
