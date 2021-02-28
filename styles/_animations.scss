@@ -1,11 +1,11 @@
 @keyframes slideIn {
   from {
-    $variable: 100%;
+    margin-right: 100%;
     width: 300%;
   }
 
   to {
-    $variable: 0%;
+    margin-right: 0%;
     width: 100%;
   }
 }

@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @-webkit-keyframes slideIn {
   from {
+    margin-right: 100%;
     width: 300%;
   }
   to {
+    margin-right: 0%;
     width: 100%;
   }
 }
 @keyframes slideIn {
   from {
+    margin-right: 100%;
     width: 300%;
   }
   to {
+    margin-right: 0%;
     width: 100%;
   }
 }
@@ -323,7 +327,7 @@ ul {
   margin-left: 25px;
 }
 
-.opacity {
+.fadeIn {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
   -webkit-animation-duration: 1s;
