@@ -1,0 +1,16 @@
+header {
+  background-color: $color-amarillo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 5px 5px 15px 5px $color-amarillo;
+  a {
+    color: $color-negro;
+  }
+  img:hover {
+    border: none;
+    border-bottom: 4px solid $color-negro;
+  }
+}
