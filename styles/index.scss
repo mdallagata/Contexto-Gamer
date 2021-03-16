@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "mediaQueries";
 @import "variables";
 @import "animations";
 @import "nav";
@@ -111,11 +112,12 @@ ul {
   @extend .transparency;
 }
 .flexbox-main-container {
-  margin-bottom: 150px;
+  justify-content: center;
+  margin: 0 100px 150px 100px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 56vw;
-  max-height: 29vw;
+  width: 100vw;
+  height: 100vh;
   column-gap: 5px;
   row-gap: 5px;
   a {
@@ -125,7 +127,8 @@ ul {
   animation-duration: 1s;
 }
 .children {
-  max-width: 325px;
+  height: 275px;
+  width: 325px;
   margin: 0 15px 15px 15px;
   @extend .border;
   @extend .transparency;
