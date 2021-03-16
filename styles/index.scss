@@ -111,11 +111,12 @@ ul {
   @extend .transparency;
 }
 .flexbox-main-container {
-  margin-bottom: 150px;
+  justify-content: center;
+  margin: 0 100px 150px 100px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 56vw;
-  max-height: 29vw;
+  width: 100vw;
+  height: 100vh;
   column-gap: 5px;
   row-gap: 5px;
   a {
@@ -125,7 +126,8 @@ ul {
   animation-duration: 1s;
 }
 .children {
-  max-width: 325px;
+  height: 275px;
+  width: 325px;
   margin: 0 15px 15px 15px;
   @extend .border;
   @extend .transparency;
@@ -191,4 +193,15 @@ ul {
 #home {
   width: 30px;
   margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  div {
+    font-size: 56.25%; // 9px = 1rem; 9/16px = 56.25%;
+  }
+}
+@media (max-width: 1300px) {
+  .flexbox-main-container {
+    margin: 0;
+  }
 }
