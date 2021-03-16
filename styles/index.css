@@ -361,16 +361,4 @@ ul {
   width: 30px;
   margin-right: 10px;
 }
-
-@media (max-width: 600px) {
-  div {
-    font-size: 56.25%;
-  }
-}
-
-@media (max-width: 1300px) {
-  .flexbox-main-container {
-    margin: 0;
-  }
-}
 /*# sourceMappingURL=index.css.map */
