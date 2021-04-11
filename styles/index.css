@@ -235,8 +235,8 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100vw;
-  height: 100vh;
+  width: 70vw;
+  height: 70vh;
   -webkit-column-gap: 5px;
           column-gap: 5px;
   row-gap: 5px;
